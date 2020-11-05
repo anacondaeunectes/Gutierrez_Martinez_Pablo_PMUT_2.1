@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button
+        defaultHref="/"
+        text="Regresar"
+        color="primary">
+      </ion-back-button>
+    <ion-title>{{test}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-avatar>
+    <img [src]="contactoTemp.img_src">
+  </ion-avatar>
+  <ion-label>
+    <h3>{{contactoTemp.nombre}}</h3>
+    <p>{{contactoTemp.profesion}}</p>
+  </ion-label>
+  <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
+</ion-content>
