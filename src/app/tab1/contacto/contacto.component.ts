@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Contacto } from './contacto.model';
 
 @Component({
@@ -8,6 +8,7 @@ import { Contacto } from './contacto.model';
 })
 export class ContactoComponent {
 
+  @Input() 
   contacto: Contacto;
 
   constructor() { }

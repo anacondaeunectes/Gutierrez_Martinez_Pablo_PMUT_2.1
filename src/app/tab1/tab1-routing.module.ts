@@ -11,6 +11,14 @@ const routes: Routes = [
   {
     path:'/contacto/:contacto.nombre',
     component: Contacto
+  },
+  {
+    path: 'han-solo',
+    loadChildren: () => import('./pages/han-solo/han-solo.module').then( m => m.HanSoloPageModule)
+  },
+  {
+    path: 'leia',
+    loadChildren: () => import('./pages/leia/leia.module').then( m => m.LeiaPageModule)
   }
 ];
 

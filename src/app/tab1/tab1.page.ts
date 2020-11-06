@@ -12,16 +12,12 @@ export class Tab1Page {
   router:Router;
   
   listadoContactos:Contacto[] = [
-    new Contacto("Leia", "Princesa", ""), 
-    new Contacto("Han Solo", "Cazarrecompensas", ""),
-    new Contacto("Hey", "Recolectora", ""),
-    new Contacto("Finn", "Piloto", "")
+    new Contacto("Leia", "Princesa", "assets/img/PrincessLeia.jpg"), 
+    new Contacto("Han Solo", "Cazarrecompensas", "assets/img/HanSolo.jpg"),
+    new Contacto("Rey", "Recolectora", "assets/img/Rey.jpg"),
+    new Contacto("Finn", "Piloto", "assets/img/Finn.png")
   ];
 
   constructor() {}
-
-  onClickContacto(){
-    // this.router.navigate(['/contacto', ]);
-  }
 
 }
