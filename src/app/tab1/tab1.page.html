@@ -1,13 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>{{test}}</ion-title>
+    <ion-title>Llamadas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true"> 
   <ion-list>
     <ion-item *ngFor="let contactoTemp of listadoContactos;"
-    routerLink="contactoTemp.redirectTo"
+    [routerLink]="contactoTemp.redirectTo"
     detail>
       <ion-avatar slot="start"> 
         <img [src]="contactoTemp.img_src">

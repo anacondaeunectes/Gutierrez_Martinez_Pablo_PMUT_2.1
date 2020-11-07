@@ -8,17 +8,25 @@ const routes: Routes = [
     path: '',
     component: Tab1Page,
   },
+  // {
+  //   path:'/contacto/:contacto.nombre',
+  //   component: Contacto
+  // },
   {
-    path:'/contacto/:contacto.nombre',
-    component: Contacto
-  },
-  {
-    path: 'han-solo',
+    path: 'han',
     loadChildren: () => import('./pages/han-solo/han-solo.module').then( m => m.HanSoloPageModule)
   },
   {
     path: 'leia',
     loadChildren: () => import('./pages/leia/leia.module').then( m => m.LeiaPageModule)
+  },
+  {
+    path: 'rey',
+    loadChildren: () => import('./pages/rey/rey.module').then( m => m.ReyPageModule)
+  },
+  {
+    path: 'finn',
+    loadChildren: () => import('./pages/finn/finn.module').then( m => m.FinnPageModule)
   }
 ];
 
