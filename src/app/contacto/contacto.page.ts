@@ -12,13 +12,14 @@ export class ContactoPage implements OnInit {
 
   contacto:Contacto;
 
-  constructor(public servicioContactos:ContactosService, public activatedRouter:ActivatedRoute) {
+  constructor(public servicioContactos:ContactosService, public activatedRouter:ActivatedRoute) {}
+
+  ngOnInit() {
     this.activatedRouter.paramMap.subscribe(x => {
       this.contacto =  this.servicioContactos.getContacto(x.get('nombre'));
     })
-  }
 
-  ngOnInit() {
+    console.log(this.contacto);
   }
 
 }
