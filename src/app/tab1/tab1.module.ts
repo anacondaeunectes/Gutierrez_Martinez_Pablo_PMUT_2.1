@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
-import { Contacto } from './contacto/contacto.model';
+import { ContactosService } from '../services/contactos.service'
 
 @NgModule({
   imports: [
@@ -14,7 +14,8 @@ import { Contacto } from './contacto/contacto.model';
     FormsModule,
     Tab1PageRoutingModule
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page],
+  providers: [ContactosService]
 })
 export class Tab1PageModule {
   

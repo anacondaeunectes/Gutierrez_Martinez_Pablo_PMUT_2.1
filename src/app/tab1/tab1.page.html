@@ -7,7 +7,8 @@
 <ion-content [fullscreen]="true"> 
   <ion-list>
     <ion-item *ngFor="let contactoTemp of listadoContactos;"
-    [routerLink]="contactoTemp.redirectTo"
+    [routerLink]="['/tabs/llamadas', contactoTemp.nombre]"
+    (click)="test"
     detail>
       <ion-avatar slot="start"> 
         <img [src]="contactoTemp.img_src">
